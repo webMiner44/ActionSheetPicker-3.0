@@ -8,14 +8,13 @@ let package = Package(
     platforms: [.iOS(.v9)],
     products: [
         .library(
-            name: "ActionSheetPicker-3.0",
+            name: "ActionSheetPicker",
             targets: ["CoreActionSheetPicker"]),
     ],
     targets: [
         .target(
             name: "CoreActionSheetPicker",
-            path: "CoreActionSheetPicker/CoreActionSheetPicker/Pickers",
-            publicHeadersPath: "include"
+            path: "CoreActionSheetPicker/CoreActionSheetPicker"
         )
     ],
     swiftLanguageVersions: [.v5]
